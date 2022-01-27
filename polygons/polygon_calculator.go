@@ -14,6 +14,6 @@ func main() {
 
 	for _, shape := range shapes {
 		fmt.Printf("Perimeter: %d\n", shape.GetPerimeter())
-		fmt.Printf("Area: %d\n", shape.GetArea())
+		fmt.Printf("Area: %d\n\n", shape.GetArea())
 	}
 }
