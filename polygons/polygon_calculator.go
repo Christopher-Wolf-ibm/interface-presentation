@@ -1,19 +1,19 @@
 package main
 
-type Shape interface {
+type Polygon interface {
 	GetPerimeter() float64
 	GetArea() float64
 }
 
 func main() {
-	shapes := []Shape{}
+	polygons := []Polygon{}
 
-	shapes = append(shapes, Rectangle{...})
-	shapes = append(shapes, Square{...})
-	shapes = append(shapes, Triangle{...})
+	polygons = append(polygons, Rectangle{...})
+	polygons = append(polygons, Square{...})
+	polygons = append(polygons, Triangle{...})
 
-	for _, shape := range shapes {
-		fmt.Printf("Perimeter: %d\n", shape.GetPerimeter())
-		fmt.Printf("Area: %d\n\n", shape.GetArea())
+	for _, polygon := range polygons {
+		fmt.Printf("Perimeter: %d\n", polygon.GetPerimeter())
+		fmt.Printf("Area: %d\n\n", polygon.GetArea())
 	}
 }
